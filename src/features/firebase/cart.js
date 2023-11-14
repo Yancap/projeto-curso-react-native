@@ -110,10 +110,8 @@ export const addToCart=async(itemId,qty)=>{
             qty:qty,
         })
         await updateDoc(userDocRef,{cart:cartItems})
-        console.log("items added to cart")
         return {success:true,data:cartItems}
     }else{
-        console.error("user or product doesnt exist")
     }
 }
 
@@ -126,7 +124,5 @@ export const removeItemById = async(id) => {
             await updateDoc(userDocRef,{cart:newCart})
             const subTotal = newCart.reduce((acc,curr)=> acc+Number(curr.price))
             return {data:newCart,success:true,subTotal}
-        }else{
-            console.log("user doesn't exists")
         }
     }

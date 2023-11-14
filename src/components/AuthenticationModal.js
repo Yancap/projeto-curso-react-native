@@ -95,7 +95,7 @@ const AuthenticationModal = ({ modalVisible, setModalVisible }) => {
                 </Text>
               </TouchableOpacity>
               <View className="flex-row justify-center items-center mt-4">
-                <Text className="text-slate-500">Not a User?</Text>
+                <Text className="text-slate-500">Não é Usuário?</Text>
                 <Pressable onPress={() => setType("register")}>
                   <Text className="font-bold"> Register</Text>
                 </Pressable>
@@ -141,7 +141,7 @@ const AuthenticationModal = ({ modalVisible, setModalVisible }) => {
               </TouchableOpacity>
 
               <View className="flex-row justify-center items-center mt-4">
-                <Text className="text-slate-500">Already a User?</Text>
+                <Text className="text-slate-500">Já é um usuário?</Text>
                 <Pressable onPress={() => setType("login")}>
                   <Text className="font-bold"> Login</Text>
                 </Pressable>

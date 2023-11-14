@@ -52,9 +52,9 @@ const Home = ({ navigation }) => {
         </View>
 
         <View className="mt-6 px-5">
-          <Text className="font-bold text-2xl">Welcome, <Text className="font-bold text-slate-500">{currentUser?.name}</Text></Text>
+          <Text className="font-bold text-2xl">Bem vindo, <Text className="font-bold text-slate-500">{currentUser?.name}</Text></Text>
           <Text className="font-semibold text-xl text-gray-500">
-            Our Fashions App
+            ao nosso Fashions App
           </Text>
         </View>
 
@@ -76,9 +76,9 @@ const Home = ({ navigation }) => {
         </View>
         <View className="mt-4">
           <View className="flex-row justify-between items-center px-5">
-            <Text className="text-lg font-extrabold">New Arrivals</Text>
+            <Text className="text-lg font-extrabold">Novos Produtos</Text>
             <Pressable onPress={() => navigation.navigate("productlistscreen")}>
-              <Text className="text-xs text-gray-500">View All</Text>
+              <Text className="text-xs text-gray-500">Ver Todos</Text>
             </Pressable>
           </View>
           <ScrollView

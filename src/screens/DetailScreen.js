@@ -77,18 +77,8 @@ const DetailScreen = ({navigation,route}) => {
                 </View>
             </View>
         </View>
-        {/* <View className="mt-6">
-          <Text className="font-extrabold mb-3">Size</Text>
-          <View className="flex-row justify-evenly">
-          {sizes.map((size) => (
-            <View className="justify-center items-center rounded-full w-10 h-10 bg-white border border-gray-300">
-                <Text>{size}</Text>
-            </View>
-          ))}
-          </View>
-        </View> */}
         <View className="mt-6">
-          <Text className="font-extrabold mb-3">Description</Text>
+          <Text className="font-extrabold mb-3">Descrição</Text>
           <ScrollView className="h-36">
           <Text className="text-gray-500 text-xs">
             {product?.description}
@@ -100,11 +90,11 @@ const DetailScreen = ({navigation,route}) => {
     <View className="absolute bottom-4 left-0 w-full px-4">
       <View className="flex-row justify-between items-center mt-8">
         <View >
-          <Text className="text-gray-500 mb-[-4px]">Total Price</Text>
+          <Text className="text-gray-500 mb-[-4px]">Preço Total</Text>
           <Text className="font-bold text-lg">${product?.price}</Text>
         </View>
         <Pressable onPress={addItemToCart} className="items-center bg-black px-6 py-3 rounded-3xl" >
-          <Text className="text-white font-semibold">Add to Cart</Text>
+          <Text className="text-white font-semibold">Adicionar ao Carrinho</Text>
         </Pressable>
       </View>
       </View>

@@ -35,7 +35,7 @@ const ProfileScreen = () => {
           </View>
           :
           <View className="items-center justify-center">
-            <Text className="text-lg font-bold">Login to view your Profile!</Text>
+            <Text className="text-lg font-bold">Login para ver seu Perfil!</Text>
           </View>
           }
         </View>
